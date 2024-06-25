@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  // overflow: hidden;
+  // font-family: system-ui;
+}
+
+body {
+  overflow: hidden;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e1f1fc0;
+  overflow: hidden;
+}
+
+.window-all {
+  .runningApp {
+    padding: 2px 5px;
+    margin: 0 2px;
+    background-color: rgba(66, 66, 66, 0.244);
+    border-radius: 0.3rem;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: rgba(35, 34, 34, 0.414);
+    }
+  }
+}
+
+#terminal {
+  color: white;
+
+  .cmd-input-line {
+    .cmd-input-start {
+      color: rgba(10, 244, 25, 0.823);
+      font-weight: 800;
+      margin-right: 10px;
+    }
+
+    .cmd-input-span {
+      caret-color: #4ade80;
+      outline: transparent;
+      color: white;
+    }
+  }
+
+  p {
+    white-space: break-spaces;
+  }
+
+  #history-info {
+
+    .response-wrong-p {
+      color: rgba(250, 17, 17, 0.962);
+    }
+  }
+
+  #current-info {
+    height: 30%;
+  }
+}
